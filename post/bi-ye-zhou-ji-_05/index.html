@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>毕业周记_05 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://paletree.github.io//favicon.ico?v=1586003252399">
+<link rel="stylesheet" href="https://paletree.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="这是我的第5篇毕业设计周记。
+
+疫情：
+国内的疫情开始好转，然后快递逐渐恢复，我也收到了几本相关的资料。值得一提的是，之前10/11的魔咒居然应验了。国内好转，但是国外疫情变得一团糟，本来最近几天已经可以戴着口罩去外面遛遛弯，稍微放松一下压..." />
+    <meta name="keywords" content="毕业设计,周记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://paletree.github.io/">
+        <img src="https://paletree.github.io//images/avatar.png?v=1586003252399" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://paletree.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">毕业周记_05</h2>
+            <div class="post-date">2020-04-02</div>
+            
+              <div class="feature-container" style="background-image: url('https://paletree.github.io//post-images/bi-ye-zhou-ji-_05.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>这是我的第5篇毕业设计周记。</p>
+<!-- more -->
+<p>疫情：<br>
+国内的疫情开始好转，然后快递逐渐恢复，我也收到了几本相关的资料。值得一提的是，之前10/11的魔咒居然应验了。国内好转，但是国外疫情变得一团糟，本来最近几天已经可以戴着口罩去外面遛遛弯，稍微放松一下压力，结果突然得知小县城有树哥来自伊朗的外籍华工，然后整个县城的气氛又开始变得压抑的紧张了起来。</p>
+<p>效率提升计划：<br>
+这应该是我最后的挣扎。目前我一共买了两个转接头，四条视频线……<br>
+读了大量Intel HD和thinkpad 服务文档，也没有找到解决为题的核心，另外根据thinkpad T系列本身自带第二个mini DP，而这台E480只有单HDMI，我试着下单了一个USB3.0转VGA，如果自带的HDMI接口强制默认是一台设备，那我可以试着从物理接口层增加一个视频输出口，等着看结果</p>
+<p>做毕设：<br>
+本周内完成的内容主要包括就是要开始去摸一些各种各样的控件，因为我曾经有过c sharp的可视化编程和Java的windowBulider插件的使用经验。结果android studio其实并不算一个软柿子，在经历了四五次无响应和闪退之后，我觉得可能找到了问题的所在。这个例子一个最基本的界面，一个layout上面给一个textview和一个置于底端的menu。试运行的时候会发现安卓模拟器加载正常，然后。进入程序，然后就开始闪退。后来最终定位问题的来源，由于习惯了鼠标直接拽控件的简单粗暴的开发模式，Textview和命令不是存在一条极细的细缝，以鼠标的那个操作精度是靠手动拖拽，不能完美的贴合，因为这是一个很普通的demo，所以其实也没有预知底层，然后就导致这个栏目，实际上界面不完整，自然而然闪退。</p>
+<p>经过了一些尴尬的情况之后，最后决定还是从头回来补票，嗯。直接退回到安卓4大件，开始重新的把基础的example和实例demo都全部跑一遍。</p>
+<p>这就是本周大致的情况。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://paletree.github.io/tag/LYIOlsvwe/" class="tag">
+                    毕业设计
+                  </a>
+                
+                  <a href="https://paletree.github.io/tag/HOcN5iEhfs/" class="tag">
+                    周记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://paletree.github.io/post/bi-ye-zhou-ji-_04/">
+                  <h3 class="post-title">
+                    毕业周记_04
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

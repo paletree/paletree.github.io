@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>毕业周记_03 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://paletree.github.io//favicon.ico?v=1586003252399">
+<link rel="stylesheet" href="https://paletree.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="这是我的第3篇毕业设计周记。
+
+疫情仍然是一个比较严峻的状况，我。反正目前是看不到好转的迹象，预计3月底4月初返回学校的计划可能要泡汤。先前的居家半隔离状态学习工作效率低问题，本以为只要等，勉强熬过很短暂的段时间就可以，看来如今是不能实行，..." />
+    <meta name="keywords" content="毕业设计,周记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://paletree.github.io/">
+        <img src="https://paletree.github.io//images/avatar.png?v=1586003252399" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://paletree.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">毕业周记_03</h2>
+            <div class="post-date">2020-03-19</div>
+            
+              <div class="feature-container" style="background-image: url('https://paletree.github.io//post-images/bi-ye-zhou-ji-_03.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>这是我的第3篇毕业设计周记。</p>
+<!-- more -->
+<p>疫情仍然是一个比较严峻的状况，我。反正目前是看不到好转的迹象，预计3月底4月初返回学校的计划可能要泡汤。先前的居家半隔离状态学习工作效率低问题，本以为只要等，勉强熬过很短暂的段时间就可以，看来如今是不能实行，我必须想办法提高自己的效率。</p>
+<p>我借用了一台闲置的显示器，尽管笔记本的显卡GraphsHD620功能有限，性能也较为平庸，但是我希望能够参考thinkpad dock，组一台三屏幕的工作台，用于提高长期居家学习的学习和开发效率。</p>
+<p>接下来是关于本周的工作的简单总结。由于在上周末的开题报告中的特定的部分被老师打回，所以在这之后我做了一些反思并对这个APP进行的重新进行了产品规划的产品规划，对于核心受众和用户的基本画像是怎样的，整个应用程序的功能点有哪些拓展之处，然后整个应用的最基本的原功能有什么？</p>
+<p>目前市面上的记事本类应用程序其实数量有非常的多。普遍存在的问题，一个是用户体验感受参差不齐，另一个就是一个是数据迁移很麻烦。然而同样的相对成熟偏商业化的作品来说，比如印象笔记、网易云笔记，他们都是过于庞大的体量。针对可能选择轻快便捷，小众无广告的记事本同，时而还会有云同步和数据迁移需求的人，我认为是智能手机的发烧友类玩家，于是我在特定的圈子里做了一个小规模的调研，当然受限于现在疫情的问题，很难开展大规模的用户调研。我只选择调研的平台，包括但是不限于小米说发烧友论坛一家社区和酷安讨论区。</p>
+<p>于是我初步确定了我的用户画像，多呗年轻人，显著特点是有较强的动手能力，学习能力和适应能力。偏向于开源软件，甚至一些人更加倾向于修改软件。未必会选择分享，但有创作欲望和写作欲望。</p>
+<p>这给了我一个很大胆的思路。</p>
+<p>我甚至可以选择将服务端代码独立并开源，任由使用者去配置，部署上传到自己的私人服务器或小型虚拟主机，甚至是nas服务器，以此来实现完全自由自主免费的云同步记事本服务。</p>
+<p>这是一个非常疯狂、大胆但是非常有趣的想法。在我大学学习期间，其实我也一直在寻找一款能有类似功能的工具。希望能够进行尝试。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://paletree.github.io/tag/LYIOlsvwe/" class="tag">
+                    毕业设计
+                  </a>
+                
+                  <a href="https://paletree.github.io/tag/HOcN5iEhfs/" class="tag">
+                    周记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://paletree.github.io/post/bi-she-zhou-ji-_02/">
+                  <h3 class="post-title">
+                    毕设周记_02
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

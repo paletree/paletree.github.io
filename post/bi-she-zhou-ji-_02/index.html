@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>毕设周记_02 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://paletree.github.io//favicon.ico?v=1586003252399">
+<link rel="stylesheet" href="https://paletree.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="这是我的第2篇毕设周记。
+
+尽管疫情的趋势还是非常的严重，资料不全，网络状况不佳，居家学习的效果依旧十分堪忧，不得不做好在家里长久奋战的准备。
+在这周末的主要的内容是撰写开题报告。当然从个人角度而言，我很庆幸能拿到这个题目。一直以来我都希望..." />
+    <meta name="keywords" content="毕业设计,周记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://paletree.github.io/">
+        <img src="https://paletree.github.io//images/avatar.png?v=1586003252399" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://paletree.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">毕设周记_02</h2>
+            <div class="post-date">2020-03-13</div>
+            
+              <div class="feature-container" style="background-image: url('https://paletree.github.io//post-images/bi-she-zhou-ji-_02.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>这是我的第2篇毕设周记。</p>
+<!--MORE-->
+<p>尽管疫情的趋势还是非常的严重，资料不全，网络状况不佳，居家学习的效果依旧十分堪忧，不得不做好在家里长久奋战的准备。</p>
+<p>在这周末的主要的内容是撰写开题报告。当然从个人角度而言，我很庆幸能拿到这个题目。一直以来我都希望能够有一个这样的工具，实现消息的记录提醒以及备份。而且长久以来我实现的方式大多是靠变迁和各种其他辅助类的提醒工具，比如dodel来实现这样的功能。说实话，我并不擅长写这种相对正式的文字，我个人而言还是随笔和杂技写的比较多一些。</p>
+<p>整个开题报告分大概4块，第1块内容是当前研究的目的意义已经现阶段的成果。第2块是现阶段打算采用的技术方案，以及你要实现的主要内容。第3块是你自己的实践规划以及后续每一个阶段要走到什么样的进度。第4块是相关论文文献的引用。</p>
+<p>严谨系统性的叙述一直是我的缺陷之一。即便在长期的实践报告撰写环节，我也是习惯了贴代码和贴截图。并没有养成一个良好的习惯。当然同样的这一次也导致了我的开题报告被老师退回。陆老师很亲切的给了我留了修改意见，告诉了我第2块技术手段以及实现方案研究设计基本内容，这一块存在一些表现不明。</p>
+<p>然后结合了老师提供的一些参考，做了一些修改，在一些技术实现方面进行了一些明确，同时对一些没有明确的打算，后期再进行二次考量的内容，给出了几种可能的选择方向。</p>
+<blockquote>
+<p>整个应用以安卓端为主，初步划分为三个页面：首页、云服务、设置。</p>
+</blockquote>
+<blockquote>
+<p>其中首页可以总览所有的笔记，可以滑动，拖拽，增加新的note，点击查阅，编辑，删除</p>
+</blockquote>
+<blockquote>
+<p>首页可进入单一note的子页面，包括的可执行操作：编辑（唤起输入法），保存，执行文件向上同步，</p>
+</blockquote>
+<blockquote>
+<p>云同步页面：验证云同步权限，访问云端，云文件恢复，本地note导出/导入，云策略选择。</p>
+</blockquote>
+<blockquote>
+<p>设置页面：个人账号相关设置，应用风格、主题色修改、本地存储路径、版本声明、数据和WLAN设置等。</p>
+</blockquote>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://paletree.github.io/tag/LYIOlsvwe/" class="tag">
+                    毕业设计
+                  </a>
+                
+                  <a href="https://paletree.github.io/tag/HOcN5iEhfs/" class="tag">
+                    周记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://paletree.github.io/post/bi-she-zhou-ji-_01/">
+                  <h3 class="post-title">
+                    毕设周记_01
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
